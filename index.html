@@ -9,17 +9,61 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <footer>
-      Code by
-      <a href="https://github.com/sarahwiens" target="_blank">Sarah Wiens</a>,
-      open-sourced on
-      <a href="https://github.com/sarahwiens/world-clock" target="_blank"
-        >GitHub</a
-      >, and hosted by
-      <a href="https://sarahwiens-worldclock.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>World Clock</h1>
+        <div class="cities-select">
+          <select name="cities" id="cities">
+            <option value="">Choose a city</option>
+            <option value="America/New_York">New York City</option>
+            <option value="Asia/Shanghai">Shanghai</option>
+            <option value="Europe/Paris">Paris</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Kolkata">Mumbai</option>
+          </select>
+        </div>
+      </header>
+      <main>
+        <div class="all-cities-container">
+          <div class="city-container">
+            <div class="city-name">New York City</div>
+            <div class="date">Month Day, Year</div>
+            <div class="time">H:MM:SS AM</div>
+          </div>
+          <div class="city-container">
+            <div class="city-name">Shanghai</div>
+            <div class="date">Month Day, Year</div>
+            <div class="time">H:MM:SS AM</div>
+          </div>
+          <div class="city-container">
+            <div class="city-name">Paris</div>
+            <div class="date">Month Day, Year</div>
+            <div class="time">H:MM:SS AM</div>
+          </div>
+          <div class="city-container">
+            <div class="city-name">Tokyo</div>
+            <div class="date">Month Day, Year</div>
+            <div class="time">H:MM:SS AM</div>
+          </div>
+          <div class="city-container">
+            <div class="city-name">Mumbai</div>
+            <div class="date">Month Day, Year</div>
+            <div class="time">H:MM:SS AM</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Code by
+        <a href="https://github.com/sarahwiens" target="_blank">Sarah Wiens</a>,
+        open-sourced on
+        <a href="https://github.com/sarahwiens/world-clock" target="_blank"
+          >GitHub</a
+        >, and hosted by
+        <a href="https://sarahwiens-worldclock.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>

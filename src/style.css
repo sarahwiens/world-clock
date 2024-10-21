@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgb(14, 21, 0) 9.4%,
+    rgb(115, 64, 0) 78.4%
+  );
+}
+.container {
+  display: block;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(241, 196, 87, 0.7);
+  background-image: url(media/pexels-aaditya-arora-188236-592753.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(241, 196, 87, 0.7);
+  background-blend-mode: lighten;
+}

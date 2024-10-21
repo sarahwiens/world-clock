@@ -71,3 +71,12 @@ h1 {
   font-weight: 450;
   color: #6e1e3f;
 }
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(14, 21, 0, 0.6);
+  padding: 20px 0;
+}
+a {
+  color: rgba(110, 30, 63, 0.8);
+}

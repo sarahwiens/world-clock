@@ -7,21 +7,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <header>
         <h1>World Clock</h1>
-        <div class="cities-select">
-          <select name="cities" id="cities">
-            <option value="">Choose a city</option>
-            <option value="America/New_York">New York City</option>
-            <option value="Asia/Shanghai">Shanghai</option>
-            <option value="Europe/Paris">Paris</option>
-            <option value="Asia/Tokyo">Tokyo</option>
-            <option value="Asia/Kolkata">Mumbai</option>
-          </select>
-        </div>
+        <select name="cities" id="cities" class="cities-select">
+          <option value="">Choose a city</option>
+          <option value="America/New_York">New York City</option>
+          <option value="Asia/Shanghai">Shanghai</option>
+          <option value="Europe/Paris">Paris</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Asia/Kolkata">Mumbai</option>
+        </select>
       </header>
       <main>
         <div class="all-cities-container">

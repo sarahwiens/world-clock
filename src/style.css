@@ -4,6 +4,7 @@ body {
     rgb(14, 21, 0) 9.4%,
     rgb(115, 64, 0) 78.4%
   );
+  font-family: "Open Sans", sans-serif;
 }
 .container {
   display: block;
@@ -18,4 +19,26 @@ body {
   background-position: center;
   background-color: rgba(241, 196, 87, 0.7);
   background-blend-mode: lighten;
+}
+header {
+  text-align: center;
+  margin: 0px;
+}
+h1 {
+  color: rgba(14, 21, 0, 0.82);
+  margin-top: 0px;
+}
+.cities-select {
+  background-color: rgba(114, 165, 114, 0.7);
+  color: #0e1500;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid #332500;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.cities-select:hover {
+  transform: scale(1.2);
 }

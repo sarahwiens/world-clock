@@ -18,7 +18,7 @@
     <div class="container">
       <header>
         <h1>World Clock</h1>
-        <select name="cities" id="cities" class="cities-select">
+        <select name="cities" id="cities">
           <option value="">Choose a city</option>
           <option value="America/New_York">New York City</option>
           <option value="Asia/Shanghai">Shanghai</option>
@@ -28,43 +28,43 @@
         </select>
       </header>
       <main>
-        <div class="all-cities-container">
-          <div class="city-container">
-            <div class="place">
-              <span class="city-name">New York City</span><br />
-              <span class="date">Month Day, Year</span>
-            </div>
-            <div class="time">H:MM:SS AM</div>
+        <!-- <div class="all-cities-container"> Use for JS to swap data based off selection? -->
+        <div class="city-container">
+          <div>
+            <span class="city-name">New York City</span><br />
+            <span class="date">Month Day, Year</span>
           </div>
-          <div class="city-container">
-            <div class="place">
-              <span class="city-name">Shanghai</span><br />
-              <span class="date">Month Day, Year</span>
-            </div>
-            <div class="time">H:MM:SS AM</div>
-          </div>
-          <div class="city-container">
-            <div class="place">
-              <span class="city-name">Paris</span><br />
-              <span class="date">Month Day, Year</span>
-            </div>
-            <div class="time">H:MM:SS AM</div>
-          </div>
-          <div class="city-container">
-            <div class="place">
-              <span class="city-name">Tokyo</span><br />
-              <span class="date">Month Day, Year</span>
-            </div>
-            <div class="time">H:MM:SS AM</div>
-          </div>
-          <div class="city-container">
-            <div class="place">
-              <span class="city-name">Mumbai</span><br />
-              <span class="date">Month Day, Year</span>
-            </div>
-            <div class="time">H:MM:SS AM</div>
-          </div>
+          <div class="time">H:MM:SS <small>AM</small></div>
         </div>
+        <div class="city-container">
+          <div>
+            <span class="city-name">Shanghai</span><br />
+            <span class="date">Month Day, Year</span>
+          </div>
+          <div class="time">H:MM:SS <small>AM</small></div>
+        </div>
+        <div class="city-container">
+          <div>
+            <span class="city-name">Paris</span><br />
+            <span class="date">Month Day, Year</span>
+          </div>
+          <div class="time">H:MM:SS <small>AM</small></div>
+        </div>
+        <div class="city-container">
+          <div>
+            <span class="city-name">Tokyo</span><br />
+            <span class="date">Month Day, Year</span>
+          </div>
+          <div class="time">H:MM:SS <small>AM</small></div>
+        </div>
+        <div class="city-container">
+          <div>
+            <span class="city-name">Mumbai </span><br />
+            <span class="date">Month Day, Year</span>
+          </div>
+          <div class="time">H:MM:SS <small>AM</small></div>
+        </div>
+        <!-- </div> -->
       </main>
       <footer>
         Code by

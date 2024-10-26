@@ -42,7 +42,7 @@ button {
   cursor: pointer;
   transition: all 200ms;
 }
-.cities-select:hover,
+select:hover,
 button:hover {
   transform: scale(1.2);
 }

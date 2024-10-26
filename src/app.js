@@ -80,22 +80,23 @@ function updateTime() {
           `;
 }
 
-function changeCity(event) {
-  clearInterval(allCitiesInterval);
-  let timezone = event.target.value;
-  if (timezone === "current") {
-    timezone = moment.tz.guess();
-  }
-  let cityName = timezone
-    .replace("_", " ")
-    .replace("Kolkata", "Mumbai")
-    .split("/")[1];
-  console.log(cityName);
+function changeCityRepeat(event) {
+  selectCityInterval = setInterval(changeCity, 1000);
+  function changeCity() {
+    clearInterval(allCitiesInterval);
+    let timezone = event.target.value;
+    if (timezone === "current") {
+      timezone = moment.tz.guess();
+    }
+    let cityName = timezone
+      .replace("_", " ")
+      .replace("Kolkata", "Mumbai")
+      .split("/")[1];
 
-  let selectedCitiesContainerElement = document.querySelector(
-    "#selected-cities-container"
-  );
-  selectedCitiesContainerElement.innerHTML = `
+    let selectedCitiesContainerElement = document.querySelector(
+      "#selected-cities-container"
+    );
+    selectedCitiesContainerElement.innerHTML = `
   <div class="city-container">
             <div>
               <span class="city-name">${cityName}</span>
@@ -107,15 +108,16 @@ function changeCity(event) {
             <div class="time">${moment()
               .tz(timezone)
               .format("h:mm:ss")} <small>${moment()
-    .tz(timezone)
-    .format("A")}</small>
+      .tz(timezone)
+      .format("A")}</small>
             </div>
           </div>
           <a href="/"><button class="all-cites" href="/">Show All Cities</button></a>`;
+  }
 }
 
 updateTime();
 allCitiesInterval = setInterval(updateTime, 1000);
 
 let citiesSelectorElement = document.querySelector("#cities-selector");
-citiesSelectorElement.addEventListener("change", changeCity);
+citiesSelectorElement.addEventListener("change", changeCityRepeat);

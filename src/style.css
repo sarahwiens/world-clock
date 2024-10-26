@@ -29,7 +29,9 @@ h1 {
   color: rgba(14, 21, 0, 0.82);
   margin: 0px;
 }
-select {
+select,
+button {
+  display: block;
   background-color: rgba(114, 165, 114, 0.7);
   margin: 10px auto;
   padding: 5px 12px;
@@ -40,7 +42,8 @@ select {
   cursor: pointer;
   transition: all 200ms;
 }
-.cities-select:hover {
+.cities-select:hover,
+button:hover {
   transform: scale(1.2);
 }
 .city-container {
@@ -76,6 +79,13 @@ footer {
   color: rgba(14, 21, 0, 0.6);
   padding: 20px 0;
 }
-a {
+footer a {
   color: rgba(110, 30, 63, 0.8);
+  text-decoration: underline;
+}
+button {
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
 }

@@ -110,71 +110,12 @@ function changeCity(event) {
     .tz(timezone)
     .format("A")}</small>
             </div>
-          </div>`;
+          </div>
+          <a href="/"><button class="all-cites" href="/">Show All Cities</button></a>`;
 }
-
-// function showAllCities() {
-//   let cities = ["New York", "Shanghai", "Paris", "Tokyo", "Mumbai"];
-
-//   cities.forEach;
-//   if (city === "New York") {
-//     cityTimezone = "America/New_York";
-//   }
-
-//   if (city === "Shanghai") {
-//     cityTimezone = "Asia/Shanghai";
-//   }
-
-//   if (city === "Paris") {
-//     cityTimezone = "Europe/Paris";
-//   }
-
-//   if (city === "Tokyo") {
-//     cityTimezone = "Asia/Tokyo";
-//   }
-
-//   if (city === "Mumbai") {
-//     cityTimezone = "Asia/Kolkata";
-//   }
-
-//   let allCitiesHTML = "";
-
-// cities.forEach(function (city, index)){if (index < 4){allCitiesHTML=allCitiesHTML + `
-//   <div class="city-container">
-//           <div>
-//             <span class="city-name">${cityTimezones.name}</span>
-//             <br />
-//             <span class="date">
-//               ${moment().tz(${cityTimezones.timezone}).format("MMMM D, YYYY")}
-//             </span>
-//           </div>
-//           <div class="time">${moment()
-//             .tz(${cityTimezones.timezone})
-//             .format("h:mm:ss")} <small>${moment()
-//   .tz(${cityTimezones.timezone})
-//   .format("A")}</small>
-//           </div>
-//         </div>`;}}
-
-// selectedCitiesContainerElement.innerHTML = allCitiesHTML;
-
-// function determineDisplayType(event) {
-//   let timezone = event.target.value;
-//   if (timezone.length < 2) {
-//     showAllCities();
-//     setInterval(showAllCities, 1000);
-//   } else {
-//     showOneCity(timezone);
-//     setInterval(showOneCity(timezone), 1000);
-//   }
-// }
 
 updateTime();
 allCitiesInterval = setInterval(updateTime, 1000);
 
 let citiesSelectorElement = document.querySelector("#cities-selector");
 citiesSelectorElement.addEventListener("change", changeCity);
-citiesSelectorElement.addEventListener(
-  "change",
-  (citySelectInterval = setInterval(changeCity, 1000))
-);

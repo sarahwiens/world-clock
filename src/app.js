@@ -82,25 +82,15 @@ function updateTime() {
 
 function changeCity(event) {
   clearInterval(allCitiesInterval);
-
   let timezone = event.target.value;
-  let cityName = timezone;
-
-  if (timezone === "America/New_York") {
-    cityName = "New York City";
+  if (timezone === "current") {
+    timezone = moment.tz.guess();
   }
-  if (timezone === "Asia/Shanghai") {
-    cityName = "Shanghai";
-  }
-  if (timezone === "Europe/Paris") {
-    cityName = "Paris";
-  }
-  if (timezone === "Asia/Tokyo") {
-    cityName = "Tokyo";
-  }
-  if (timezone === "Asia/Kolkata") {
-    cityName = "Mumbai";
-  }
+  let cityName = timezone
+    .replace("_", " ")
+    .replace("Kolkata", "Mumbai")
+    .split("/")[1];
+  console.log(cityName);
 
   let selectedCitiesContainerElement = document.querySelector(
     "#selected-cities-container"
